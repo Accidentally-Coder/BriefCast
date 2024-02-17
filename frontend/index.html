@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BriefCast</title>
+    <!-- tailwind + daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- style -->
+    <style>
+        .font-saira {
+            font-family: "Saira Condensed", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-saira">
+    <header>
+        <!-- navbar -->
+        <div class="navbar bg-black text-white h-[200px]">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl absolute top-10">
+                    <img src="./images/logo.png" alt="" height="400px" width="200px">
+                </a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal font-bold text-3xl">
+                    <li><a>HOME</a></li>
+                    <li><a>FEATURES</a></li>
+                    <li><a>TEMPLATES</a></li>
+                    <li><a>REVIEW</a></li>
+                    <li><a class="bg-red-700">GENERATE</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section class="w-full h-[800px] mb-24">
+            <!-- banner image -->
+            <img src="./images/black box.jpg" alt="banner">
+            <!-- banner writing -->
+            <div class="lg:visible bg-white w-[600px] h-[365px] absolute flex transform -translate-y-1/2 left-14 top-3/4 rounded-2xl flex-col flex-start
+                            gap-4 p-8 hover:translate-x-1">
+                <h1 class="font-bold text-8xl">Transforming Voices into <span class="text-red-700">Text!</span></h1>
+            </div>
+        </section>
+
+        <!-- features section -->
+        <section class="mx-14 my-24 bg-white">
+            <h1 class="text-red-700 font-bold text-7xl text-center">FEATURES</h1>
+            <!-- features card section -->
+            <div class="grid gap-6 grid-cols-3 p-5">
+                <div class="rounded-2xl">
+                    <!-- card 1,1 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos quae nam
+                                repellendus assumenda deserunt unde aliquid labore placeat. Velit hic amet laudantium
+                                labore ea totam officiis voluptas commodi reprehenderit.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 1,2 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia velit repudiandae
+                                quaerat debitis quam esse eum modi sapiente rerum ad consectetur, blanditiis minima,
+                                quibusdam quas minus vero unde nemo at!</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 1,3 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Audio to Text</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,1 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam labore, deserunt nemo
+                                laborum sed quasi amet earum veniam, magnam cumque quia quas quam debitis. Veniam
+                                perferendis expedita nostrum ipsa animi.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,2 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, magnam officiis laborum
+                                rerum quidem quis dolorum. Non voluptates culpa est, vero totam quia veniam, eum
+                                suscipit unde illo deleniti dolore.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,3 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis et
+                                explicabo! Obcaecati doloremque pariatur necessitatibus, vel tempore magnam fugiat
+                                inventore voluptate voluptatibus praesentium odit voluptates perspiciatis unde illo.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template section -->
+        <section class="mx-14 my-24 bg-black">
+            <h1 class="text-red-700 font-bold text-7xl text-center">TEMPLATES</h1>
+            <!-- features card section -->
+            <div class="grid gap-6 grid-cols-3 p-5">
+                <div class="rounded-2xl">
+                    <!-- card 1,1 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos quae nam
+                                repellendus assumenda deserunt unde aliquid labore placeat. Velit hic amet laudantium
+                                labore ea totam officiis voluptas commodi reprehenderit.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 1,2 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia velit repudiandae
+                                quaerat debitis quam esse eum modi sapiente rerum ad consectetur, blanditiis minima,
+                                quibusdam quas minus vero unde nemo at!</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 1,3 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Audio to Text</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,1 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam labore, deserunt nemo
+                                laborum sed quasi amet earum veniam, magnam cumque quia quas quam debitis. Veniam
+                                perferendis expedita nostrum ipsa animi.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,2 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, magnam officiis laborum
+                                rerum quidem quis dolorum. Non voluptates culpa est, vero totam quia veniam, eum
+                                suscipit unde illo deleniti dolore.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl">
+                    <!-- card 2,3 -->
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="./images/videoToText.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Audio to Text</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis et
+                                explicabo! Obcaecati doloremque pariatur necessitatibus, vel tempore magnam fugiat
+                                inventore voluptate voluptatibus praesentium odit voluptates perspiciatis unde illo.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
