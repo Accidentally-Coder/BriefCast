@@ -11,10 +11,10 @@ document.getElementById("audio-file-input").addEventListener("change", function 
         // Handle the selected file (e.g., upload or process it)
         console.log("Selected file:", selectedFile);
         const formData = new FormData();
-        formData.append("audio_file", selectedFile);
+        formData.append("audio", selectedFile);
 
         // Make a Fetch API request to your Flask API
-        fetch("https://monthly-guided-cow.ngrok.free.app/transcribe_audio", {
+        fetch("https://monthly-guided-cow.ngrok-free.app/transcribe_audio", {
             method: "POST",
             body: formData,
         })
