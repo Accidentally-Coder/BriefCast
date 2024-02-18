@@ -1,278 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BriefCast</title>
     <!-- tailwind + daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwind custom color -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
     </script>
     <!-- style -->
     <style>
-        .font-saira {
-            font-family: "Saira Condensed", sans-serif;
-        }
+      .font-saira {
+        font-family: "Saira Condensed", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body class="font-saira">
+  <body class="font-saira">
     <header>
-        <!-- navbar -->
-        <div class="navbar bg-black text-white h-[200px]">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl absolute top-10">
-                    <img src="./images/logo.png" alt="" height="400px" width="200px">
-                </a>
-            </div>
-            <div class="flex-none">
-                <ul class="menu menu-horizontal font-bold text-3xl">
-                    <li><a>HOME</a></li>
-                    <li><a>FEATURES</a></li>
-                    <li><a>TEMPLATES</a></li>
-                    <li><a>REVIEW</a></li>
-                    <li><a class="bg-red-700">GENERATE</a></li>
-                </ul>
-            </div>
+      <!-- navbar -->
+      <div class="navbar bg-black text-white h-[200px]">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl absolute top-10">
+            <img
+              src="./images/logoNew.png"
+              alt=""
+              height="250px"
+              width="125px"
+            />
+          </a>
         </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal font-bold text-3xl">
+            <li><a>HOME</a></li>
+            <li><a>FEATURES</a></li>
+            <li><a>TEMPLATES</a></li>
+            <li><a>REVIEW</a></li>
+            <li><a class="bg-red-700">GENERATE</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-        <!-- banner section -->
-        <section class="w-full h-[800px] mb-24">
-            <!-- banner image -->
-            <img src="./images/black box.jpg" alt="banner">
-            <!-- banner writing -->
-            <div class="lg:visible bg-white w-[600px] h-[365px] absolute flex transform -translate-y-1/2 left-14 top-3/4 rounded-2xl flex-col flex-start
-                            gap-4 p-8 hover:translate-x-1">
-                <h1 class="font-bold text-8xl">Transforming Voices into <span class="text-red-700">Text!</span></h1>
-            </div>
-        </section>
 
-        <!-- features section -->
-        <section class="mx-14 my-24 bg-white">
-            <!-- <h1 class="text-red-700 font-bold text-7xl text-center">FEATURES</h1> -->
-            <div class="border-t-2 border-b-2 border-dashed border-gray-300">
-                <h4 class="text-xl lg:text-4xl font-extrabold text-center pt-6 lg:pt-8">Our Transcription Services :
-                    Elevate Your Content with Precision</h4>
-                <p class="text-center text-sm lg:text-base w-[335px] lg:w-[600px] m-auto p-4 lg:p-8">Join the league of
-                    excellence in our Audio/Video to Text Conversion feature, where every spoken word finds its written
-                    brilliance. Unleash a new dimension of content transformation with our cutting-edge technology.</p>
-            </div>
-            <!-- features card section -->
-            <div class="grid gap-6 grid-cols-3 p-5">
-                <div class="rounded-2xl">
-                    <!-- card 1,1 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/VoiceToText.jpg" alt="voice to text" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Voice to Narrative</h2>
-                            <p>
-                                Turning Sound into Words : Unleash the Magic of Audio Transcription!
-                            </p>
-                        </div>
-                    </div>
+      <!-- banner section -->
+      <section
+        class="h-full mb-24 flex flex-row items-center justify-around w-[90%] m-auto pt-20"
+      >
+        <!-- banner image -->
+        <!-- <img src="./images/black box.jpg" alt="banner"> -->
+        <!-- banner writing -->
+        <div
+          class="lg:visible bg-white w-[600px] h-[365px] flex rounded-2xl flex-col flex-start gap-4 pt-8 px-8 hover:translate-x-1"
+        >
+          <h1 class="font-bold text-8xl">
+            Transforming Voices into <span class="text-red-700">Text!</span>
+          </h1>
+        </div>
+        <!-- <div class="w-[60%] m-auto  bg-black h-[80vh] rounded-xl drop-shadow-lg flex flex-col justify-end " id="chat-box">
+                <div class="chat chat-start m-4">
+                    <div class="chat-bubble">Enter your files here!</div>
                 </div>
-                <div class="rounded-2xl">
-                    <!-- card 1,2 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/VideoToText.jpg" alt="Shoes" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Screen to Script</h2>
-                            <p>
-                                Capture the Dialogue : By transforming Visual Stories into Written Narratives!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-2xl">
-                    <!-- card 1,3 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/ClassNoteGenerator.jpg" alt="Shoes" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Elevate Your Learning Experience</h2>
-                            <p>
-                                Shortcut to Organized and Comprehensive Notes : Introducing the Structured Class Note
-                                Generator
-                            </p>
+                <div class="chat chat-end m-4">
+                    <div class="chat-bubble">
+                        <button class="btn btn-outline btn-info audio-upload-btn">Audio</button>
+                        <input type="file" class="hidden" id="audio-file-input" accept=".mp3, .wav">
+                        <button class="btn btn-outline btn-info video-upload-btn">Video</button>
 
-                        </div>
                     </div>
                 </div>
-                <div class="rounded-2xl">
-                    <!-- card 2,1 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/MeetingReportGenerator.jpg" alt="Shoes" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Elevate Your Meeting With Effortless Note-Taking</h2>
-                            <p>
-                                Unlocking Productivity : Streamline Discussions, Capture Insights, and Stay
-                                Organized.
-                            </p>
+            </div> -->
+        <div
+          class="w-[55%] chat-box-container flex flex-col  justify-between h-screen bg-black rounded-2xl"
+        >   
+            
+          <div class="chat-box-content overflow-y-auto" id="chat-box">
+            <!-- Chat bubbles and other content here -->
+            <div class="chat chat-start m-4">
+              <div class="chat-bubble">Enter your files here!</div>
+            </div>
+          </div>
+          <div class="bottom-buttons flex justify-right p-4 bg-gray-300 gap-4 rounded-lg">
+            <button class="btn btn-outline btn-info audio-upload-btn">
+              Audio
+            </button>
+            <input
+              type="file"
+              class="hidden"
+              id="audio-file-input"
+              accept=".mp3, .wav"
+            />
+            <button class="btn btn-outline btn-info video-upload-btn">
+              Video
+            </button>
+            <input
+              type="file"
+              class="hidden"
+              id="video-file-input"
+              accept=".mp4"
+            />
+            <button class="btn btn-outline btn-info" id="download-btn"> Download </button>
+            <button class="btn btn-outline btn-info" id="email-btn"> Email </button>
+            <!-- Add more buttons here as needed -->
+          </div>
+        </div>
+      </section>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-2xl">
-                    <!-- card 2,2 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/SaveInCloud.jpg" alt="Shoes" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Save, Secure, Access Anywhere with Cloud Saving</h2>
-                            <p>
-                                Guardian of Your Digital Realm : Embrace the Freedom to Keep Your Files Close, Wherever
-                                You Roam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-2xl">
-                    <!-- card 2,3 -->
-                    <div class="card w-full bg-base-100 shadow-xl image-full hover:translate-y-2">
-                        <figure><img src="./images/emailReport.jpg" alt="Shoes" /></figure>
-                        <div class="card-body m-14">
-                            <h2 class="card-title">Seamless Collaboration, Endless Possibilities</h2>
-                            <p>
-                                Elevate Your Workflow with Cloud Integration : Unleash the Power of Connectivity and
-                                Transform the Way You Work.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Template section -->
-        <section class="mx-14 my-24 bg-black">
-            <!-- <h1 class="text-red-700 font-bold text-7xl text-center">TEMPLATES</h1> -->
-            <div class="border-b-2 border-dashed border-gray-300 pt-6">
-                <h4 class="text-white text-xl lg:text-4xl font-extrabold text-center pt-6 lg:pt-8">Experience enhanced
-                    UI aesthetics with our customizable and tailored templates</h4>
-                <p class="text-white text-center text-sm lg:text-base w-[335px] lg:w-[600px] m-auto p-4 lg:p-8">Discover
-                    the flexibility and precision of our templates as you effortlessly tailor them to meet your unique
-                    needs. Redefine your interface with sophistication and style, ensuring an unparalleled user
-                    experience that resonates with your brand identity.</p>
-            </div>
-            <!-- templates card section -->
-            <div class="carousel carousel-end rounded-box gap-5 p-5">
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t1.jpg" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t2.jpg" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t3.png" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t4.jpg" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t5.jpg" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t6.jpg" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-                <div class="carousel-item hover:-translate-y-2">
-                    <img src="./images/t7.png" alt="Drink" width="300px" class="rounded-2xl" />
-                </div>
-            </div>
-        </section>
-        </section>
-        <!-- reviews section -->
-        <section class="mx-14 my-24 bg-white">
-            <!-- <h1 class="text-red-700 font-bold text-7xl text-center">REVIEWS</h1> -->
-            <div class="border-t-2 border-b-2 border-dashed border-gray-300 pt-6">
-                <h6 class="text-red-600 text-base lg:text-xl font-bold text-center pt-6 lg:pt-8">HAPPY CLIENT</h6>
-                <h4 class="text-black text-xl lg:text-4xl font-extrabold text-center pt-6 lg:pt-8">
-                    Client Experiences
-                </h4>
-                <p class="text-black text-center text-sm lg:text-base w-[335px] lg:w-[600px] m-auto p-4 lg:p-8">
-                    Discover what our clients have to say about their experiences. We take pride in delivering
-                    exceptional service and creating lasting partnerships. Read their testimonials and join the ranks of
-                    satisfied clients who have chosen us for their needs.
+      <!-- features section -->
+      <section class="mx-14 my-24 bg-white">
+        <!-- <h1 class="text-red-700 font-bold text-7xl text-center">FEATURES</h1> -->
+        <div class="border-t-2 border-b-2 border-dashed border-gray-300">
+          <h4
+            class="text-xl lg:text-4xl font-extrabold text-center pt-6 lg:pt-8"
+          >
+            Our Transcription Services : Elevate Your Content with Precision
+          </h4>
+          <p
+            class="text-center text-sm lg:text-base w-[335px] lg:w-[600px] m-auto p-4 lg:p-8"
+          >
+            Join the league of excellence in our Audio/Video to Text Conversion
+            feature, where every spoken word finds its written brilliance.
+            Unleash a new dimension of content transformation with our
+            cutting-edge technology.
+          </p>
+        </div>
+        <!-- features card section -->
+        <div class="grid gap-6 grid-cols-3 p-5">
+          <div class="rounded-2xl">
+            <!-- card 1,1 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/VoiceToText.jpg" alt="voice to text" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">Voice to Narrative</h2>
+                <p>
+                  Turning Sound into Words : Unleash the Magic of Audio
+                  Transcription!
                 </p>
+              </div>
             </div>
-            <!-- reviews card section -->
-            <div class="grid gap-6 grid-cols-3 p-5">
-                <div class="rounded-2xl">
-                    <!-- card 1,1 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <div class="avatar card-title flex justify-center">
-                                <div class="w-24 rounded-full">
-                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                </div>
-                            </div>
-                            <h4 class="text-2xl font-bold flex justify-center">Kabid Rahman</h4>
-                            <p class="text-lg flex justify-center">BANKER</p>
-                            <p class="text-base text-gray-500">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quia accusantium
-                                debitis, exercitationem nam quidem ex repellat aliquam. Molestias deserunt enim ad vero
-                                quae officiis dolores aut provident, ducimus ut.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-2xl">
-                    <!-- card 1,2 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <div class="avatar card-title flex justify-center">
-                                <div class="w-24 rounded-full">
-                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                </div>
-                            </div>
-                            <h4 class="text-2xl font-bold flex justify-center">Kabid Rahman</h4>
-                            <p class="text-lg flex justify-center">BANKER</p>
-                            <p class="text-base text-gray-500">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quia accusantium
-                                debitis, exercitationem nam quidem ex repellat aliquam. Molestias deserunt enim ad vero
-                                quae officiis dolores aut provident, ducimus ut.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-2xl">
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <div class="avatar card-title flex justify-center">
-                                <div class="w-24 rounded-full">
-                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                </div>
-                            </div>
-                            <h4 class="text-2xl font-bold flex justify-center">Kabid Rahman</h4>
-                            <p class="text-lg flex justify-center">BANKER</p>
-                            <p class="text-base text-gray-500">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quia accusantium
-                                debitis, exercitationem nam quidem ex repellat aliquam. Molestias deserunt enim ad vero
-                                quae officiis dolores aut provident, ducimus ut.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 1,2 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/VideoToText.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">Screen to Script</h2>
+                <p>
+                  Capture the Dialogue : By transforming Visual Stories into
+                  Written Narratives!
+                </p>
+                <!-- <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div> -->
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 1,3 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/ClassNoteGenerator.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">Elevate Your Learning Experience</h2>
+                <p>
+                  Shortcut to Organized and Comprehensive Notes : Introducing
+                  the Structured Class Note Generator
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 2,1 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/MeetingReportGenerator.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">
+                  Elevate Your Meeting With Effortless Note-Taking
+                </h2>
+                <p>
+                  Unlocking Productivity : Streamline Discussions, Capture
+                  Insights, and Stay Organized.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 2,2 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/SaveInCloud.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">
+                  Save, Secure, Access Anywhere with Cloud Saving
+                </h2>
+                <p>
+                  Guardian of Your Digital Realm : Embrace the Freedom to Keep
+                  Your Files Close, Wherever You Roam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 2,3 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/emailReport.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body m-14">
+                <h2 class="card-title">
+                  Seamless Collaboration, Endless Possibilities
+                </h2>
+                <p>
+                  Elevate Your Workflow with Cloud Integration : Unleash the
+                  Power of Connectivity and Transform the Way You Work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Template section -->
+      <section class="mx-14 my-24 bg-black">
+        <!-- <h1 class="text-red-700 font-bold text-7xl text-center">TEMPLATES</h1> -->
+        <div class="border-b-2 border-dashed border-gray-300 pt-6">
+          <h4
+            class="text-white text-xl lg:text-4xl font-extrabold text-center pt-6 lg:pt-8"
+          >
+            Experience enhanced UI aesthetics with our customizable and tailored
+            templates
+          </h4>
+          <p
+            class="text-white text-center text-sm lg:text-base w-[335px] lg:w-[600px] m-auto p-4 lg:p-8"
+          >
+            Discover the flexibility and precision of our templates as you
+            effortlessly tailor them to meet your unique needs. Redefine your
+            interface with sophistication and style, ensuring an unparalleled
+            user experience that resonates with your brand identity.
+          </p>
+        </div>
+        <!-- templates card section -->
+        <div class="carousel carousel-end rounded-box gap-5 p-5">
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+              alt="Drink"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+              alt="Drink"
+            />
+          </div>
+        </div>
+      </section>
 
+      <!-- reviews section -->
+      <section class="mx-14 my-24 bg-black">
+        <h1 class="text-red-700 font-bold text-7xl text-center">REVIEWS</h1>
+        <!-- templates card section -->
+        <div class="grid gap-6 grid-cols-3 p-5">
+          <div class="rounded-2xl">
+            <!-- card 1,1 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/videoToText.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Audio to Text</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam, quos quae nam repellendus assumenda deserunt unde
+                  aliquid labore placeat. Velit hic amet laudantium labore ea
+                  totam officiis voluptas commodi reprehenderit.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 1,2 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/videoToText.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Audio to Text</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Mollitia velit repudiandae quaerat debitis quam esse eum modi
+                  sapiente rerum ad consectetur, blanditiis minima, quibusdam
+                  quas minus vero unde nemo at!
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl">
+            <!-- card 1,3 -->
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure>
+                <img src="./images/videoToText.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Audio to Text</h2>
+                <p>Audio to Text</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+
     <!-- footer section -->
     <footer class="footer p-10 bg-black text-white">
         <aside>
@@ -305,7 +414,7 @@
             <a class="link link-hover">Cookie policy</a>
         </nav>
     </footer>
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
