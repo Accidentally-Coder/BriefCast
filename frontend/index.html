@@ -56,13 +56,49 @@
     </header>
     <main>
         <!-- banner section -->
-        <section class="w-full h-[800px] mb-24">
+        <!-- banner section -->
+        <section class="h-full mb-24 flex flex-row items-center justify-around w-[90%] m-auto pt-20">
             <!-- banner image -->
-            <img src="./images/black box.jpg" alt="banner">
+            <!-- <img src="./images/black box.jpg" alt="banner"> -->
             <!-- banner writing -->
-            <div class="lg:visible bg-white w-[600px] h-[365px] absolute flex transform -translate-y-1/2 left-14 top-3/4 rounded-2xl flex-col flex-start
-                            gap-4 p-8 hover:translate-x-1">
-                <h1 class="font-bold text-8xl">Transforming Voices into <span class="text-red-700">Text!</span></h1>
+            <div
+                class="lg:visible bg-white w-[600px] h-[365px] flex rounded-2xl flex-col flex-start gap-4 pt-8 px-8 hover:translate-x-1">
+                <h1 class="font-bold text-8xl">
+                    Transforming Voices into <span class="text-red-700">Text!</span>
+                </h1>
+            </div>
+            <div class="w-[55%] chat-box-container flex flex-col justify-end h-screen bg-black rounded-2xl">
+                <div class="chat-box-content overflow-y-auto" id="chat-box">
+                    <div class="chat chat-start m-4">
+                        <div class="chat-bubble">Enter your files here!</div>
+                    </div>
+                </div>
+                <div class="bottom-buttons flex justify-right p-4 bg-gray-300 gap-4 rounded-lg items-center">
+                    <button class="btn btn-outline btn-info audio-upload-btn">
+                        Audio
+                    </button>
+                    <input type="file" class="hidden" id="audio-file-input" accept=".mp3, .wav" />
+                    <button class="btn btn-outline btn-info video-upload-btn">
+                        Video
+                    </button>
+                    <input type="file" class="hidden" id="video-file-input" accept=".mp4" />
+                    <button class="btn btn-outline btn-info" id="download-btn">
+                        Download
+                    </button>
+                    <button class="btn btn-outline btn-info" id="email-btn">
+                        Email
+                    </button>
+                    <details class="dropdown">
+                        <summary class="m-1">Formats</summary>
+                        <ul
+                            class=" menu dropdown-content z-[1] bg-transparent rounded-box w-52 text-blue-500 border-blue-500">
+                            <li id="class-notes"><a>Class Notes</a></li>
+                            <li id="scrum meeting"><a>Meeting Minutes</a></li>
+                            <li id="project planning"><a>Project Planning</a></li>
+                        </ul>
+                    </details>
+
+                </div>
             </div>
         </section>
 
